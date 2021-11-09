@@ -1711,8 +1711,8 @@ break
                   reply(`Miren a este boludito`)
                   }
 
-		if (budy.includes(`Gracias`)) {
-                  reply(`De nada padre`)
+		if (budy.includes(`ronaldo`)) {
+                  reply(`ya llego perrito`)
                   }
 
 		if (budy.includes(`Bien gracias y tu?`)) {
@@ -1748,7 +1748,7 @@ break
         const none = fs.readFileSync('./mp3/admin.mp3');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
                   }
-	if (budy.startsWith(`Viernes`)) {
+	if (budy.startsWith(`hola123`)) {
         const none = fs.readFileSync('./mp3/viernes.mp3');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
                   }
