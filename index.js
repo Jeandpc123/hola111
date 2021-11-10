@@ -52,11 +52,11 @@ const vcard = 'BEGIN:VCARD\n' // Tarjeta de contacto
             + 'VERSION:3.0\n' 
             + 'FN:Shan\n' // Nombre
             + 'ORG:Shanduy;\n' // Propietario
-            + 'TEL;type=CELL;type=VOICE;waid=593967689722:+593 96 768 9722\n' // ID de WhatsApp + número de teléfono
+            + 'TEL;type=CELL;type=VOICE;waid=5198891725:+593 96 768 9722\n' // ID de WhatsApp + número de teléfono
             + 'END:VCARD'
 /******FIN DE ENTRADA VCARD******/
 
-prefix = '*'
+prefix = '.'
 blocked = []
 banChats = false
 
@@ -67,9 +67,9 @@ const {
 	pack
 } = settingan
 
-/******INICIO DE FUNCIONES ENTRADA******/
+/******INICIO DE******/
 
-/******ARCHIVOS ANTILINK POR SHANDUY******/
+/******ARCHIVOS******/
 
 const antilink = JSON.parse(fs.readFileSync('./src/antilink.json'))
 const antiface = JSON.parse(fs.readFileSync('./src/antiface.json'))
@@ -79,7 +79,7 @@ const antikwai = JSON.parse(fs.readFileSync('./src/antikwai.json'))
 const antiwa = JSON.parse(fs.readFileSync('./src/antiwa.json'))
 const antidiscord = JSON.parse(fs.readFileSync('./src/antidiscord.json'))
 
-/******FIN DE ARCHIVOS ANTILINK POR SHANDUY******/
+/******FIN DE ARCHIVOS******/
 	
 function addMetadata(packname, author) {	
 	if (!packname) packname = 'RonaldoBot'; if (!author) author = 'RonaldoBot';	
@@ -193,8 +193,8 @@ async function starts() {
 			const from = mek.key.remoteJid
 			const type = Object.keys(mek.message)[0]
 			const { text, extendedText, contact, location, liveLocation, image, video, sticker, document, audio, product } = MessageType
-			const time = moment.tz('America/Guayaquil').format('HH:mm:ss')
-			const date = moment.tz('America/Guayaquil').format('DD/MM/YY')
+			const time = moment.tz('America').format('HH:mm:ss')
+			const date = moment.tz('America').format('DD/MM/YY')
 			body = (type === 'conversation' && mek.message.conversation.startsWith(prefix)) ? mek.message.conversation : (type == 'imageMessage') && mek.message.imageMessage.caption.startsWith(prefix) ? mek.message.imageMessage.caption : (type == 'videoMessage') && mek.message.videoMessage.caption.startsWith(prefix) ? mek.message.videoMessage.caption : (type == 'extendedTextMessage') && mek.message.extendedTextMessage.text.startsWith(prefix) ? mek.message.extendedTextMessage.text : ''
 			budy = (type === 'conversation') ? mek.message.conversation : (type === 'extendedTextMessage') ? mek.message.extendedTextMessage.text : ''
 			const command = body.slice(1).trim().split(/ +/).shift().toLowerCase()
@@ -206,14 +206,11 @@ async function starts() {
 				success: '✔️ Listo ✔️',
                                
 				error: {
-					stick: '[❎] Falló, se produjo un error al convertir la imagen en una pegatina',
-					yt: 'Falló en el link o se produjo un error al momento de descargar el video',
-					unire: 'Por favor, no coloques (+) solo pon el numero con el codigo de area de su pais\n\nEjemplo: *unir 52xxxxxxxxx',
-					Iv: 'Este no es un link de youtube'
+					stick: '[❎] Falló, se produjo un error al momento de leer el QR
 					},
 				only: {
 					
-					daftarB: `「NO ESTAS REGISTRADO」\n\nPA NO APARECES EN MI BASE DE DATOS ✋🥸🤚\n\nPara poder usarme escribe el siguente comando\n\nComando: ${prefix}daftar Nombre\nEjemplo: ${prefix}daftar shanduy`,
+					daftarB: `\n\nComando: ${prefix}daftar Nombre ${prefix}`,
 				}
 			}
     			const apakah = ['Si','No']
