@@ -261,215 +261,107 @@ async function starts() {
                             			
                 default:
                 
-		if (budy.includes(`Todo bien`)) {
-                  reply(`Si amigo todo bien, vite`)
-                  }
-
-		if (budy.includes(`Buenos dias`)) {
-                  reply(`Buenos Dias trolos de mierda`)
-                  }
-
 		if (budy.includes(``)) {
-                  reply(`Miren a este boludito`)
-                  }
-
-		if (budy.includes(`ronaldo`)) {
-                  reply(`ya llego perrito`)
-                  }
-
-		if (budy.includes(`Bien gracias y tu?`)) {
-                  reply(`Opa yazmin te extrañe :(`)
+                  reply(`Hola! 😀 Nos alegra que estés interesado en nuestros cursos de Formación de Agentes de Seguridad.
+Si tienes dudas respecto a este curso, debes ingresar el numero de opcion elegida:
+		  *(1):PRECIO*
+		  *(2):Duración y Horario*
+		  *(3):Requisitos*
+		  *(4): Beneficios y Ventajas*
+		  *(5): ¿Por qué elegirnos?*
+		  *(6): Temario de las clases*
+		  *(7):Numero celular de la Asesora😀*
+		  *(8)Examenes*
+		  *(9)Quiero realizar el pago ya*
+		  `)
                   }
 					
-		if (budy.includes(`Opa`)) {
-                  reply(`opaaaaa`)
+				
+		if (budy.includes(`1`)) {
+                  reply(
+			  `*PRECIO*\n\
+ El precio es de S/135 soles el cual incluye el certificado digital al culmunar los estudios`)
+                  }
+
+		if (budy.includes(`2`)) {
+                  reply(`* DURACION Y HORARIO*\n\
+las clases comienzan este *13 de septiembre* El curso tiene una duracion de 12 dias, de 8:00AM-11:45AM\n\
+las clases seran de *lunes a sabado* por las plataformas MEET/ZOOM
+		  `)
+                  }
+
+		if (budy.includes(`3`)) {
+                  reply(`*REQUISITOS PARA LA CLASE*\n\
+Contar con un dispositivo con acceso a internet ejemplo: celular, Tablet, laptop, computadora En caso usara una computadora, esta debe tener una cámara y audífono externos. 
+En caso use celular, Tablet o laptop estas tienen cámara, micrófono y audífono incorporados. Por lo que no deberá preocupase en comprar más. Tener mayoría de edad (mínimo 18 años)	
+		  `)
+                  }
+
+		if (budy.includes(`4`)) {
+                  reply(`VENEFICIOS Y VENTAJAS*\n\
+Acceso a una plataforma educativa virtual con capacitaciones previas para garantizar que usted tenga el dominio total de esta herramienta.Las clases serán grabadas y subidas a la plataforma web.
+Contará con un usuario y contraseña personal para realizar los exámenes.Tendrá mayor preferencia en la hora de postular para alguno de las infraestructuras a la cual prestamos servicios.
+Una vez culmine el curso de manera satisfactoria, estará inscrito en el sistema de la SUCAMEC, por lo que cualquier empresa de seguridad del Perú podrá verificar que usted está capacitado para ser Agente de 	Seguridad. 
+Una vez obtenga este certificado podrá continuar con los siguientes trámites para la obtención de licencia de arma. Ya que este curso es obligatorio para cualquier agente que desee obtener licencia de arma. 
+		  
+		  `)
+                  }
+					
+		if (budy.includes(`5`)) {
+                  reply(`*JL SEGURIDAD*\n\
+La empresa tiene 20 años de fundacion en la cual hemos brindado clases virtuales a 850 personas de  las cuales el 95% de ellos ya tienen trabajo como Agente de Seguridad.
+Esto gracias al prestigio y experiencia que tiene la empresa. 
+		  
+		  `)
                   }
                  
-		if (budy.includes(`Fua`)) {
-                  reply(`el diegote pa`)
+		if (budy.includes(`6`)) {
+                  reply(`*TEMARIO DE LAS CLASES*\n\
+Constitución y Derechos Humanos\n\
+Ética y Seguridad Privada\n\
+Legislación y Seguridad Privada\n\
+Redacción y elaboración de Documentos\n\
+Normas y procedimientos de Seguridad\n\
+Control de Emergencias y Seguridad de Instalaciones\n\
+Atención al Cliente e identificación de Personas\n\
+Defensa Personal\n\
+Conocimiento de Sistemas de Alarmas\n\
+Primeros Auxilios\n\
+Conocimiento y manipulación de Armas\n\
+		  
+		  
+		  `)
                   }
-	
+		
 					
-	if (budy.startsWith(`VAMOOO`)) {
-        const none = fs.readFileSync('./mp3/vamo.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+		if (budy.includes(`7`)) {
+                  reply(`*NUMERO CELULAR DE LA ASESORA*\n\
+El numero de *atencion(llamadas)* es 956988585		  
+		  
+		  
+		  
+		  `)
                   }
-	if (budy.startsWith(`Hora del sexito`)) {
-        const none = fs.readFileSync('./mp3/maau1.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+					
+					
+		
+		if (budy.includes(`8`)) {
+                  reply(`EXAMENES*n/n
+los examenes seran depues de culminar cada modulo 
+		  
+		  
+		  `)
                   }
-        if (budy.startsWith(`Cuentate un chiste`)) {
-        const none = fs.readFileSync('./mp3/dylan2.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-	if (budy.startsWith(`Admin party`)) {
-        const none = fs.readFileSync('./mp3/fiesta.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-        if (budy.startsWith(`Fiesta del admin`)) {
-        const none = fs.readFileSync('./mp3/admin.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-	if (budy.startsWith(`hola123`)) {
-        const none = fs.readFileSync('./mp3/viernes.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-	if (budy.startsWith(`:v`)) {
-        const none = fs.readFileSync('./mp3/viejo1.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-	if (budy.startsWith(`La toca 7w7`)) {
-        const none = fs.readFileSync('./anishan/anime5.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-	if (budy.startsWith(`Quien es tu sempai botsito`)) {
-        const none = fs.readFileSync('./anishan/anime4.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-	if (budy.startsWith(`Me gimes 7u7`)) {
-        const none = fs.readFileSync('./anishan/anime3.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-	if (budy.startsWith(`Te amo botsito uwu`)) {
-        const none = fs.readFileSync('./anishan/anime2.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-	if (budy.startsWith(`Onichan`)) {
-        const none = fs.readFileSync('./anishan/anime1.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-	if (budy.startsWith(`Pasen sexo`)) {
-        const none = fs.readFileSync('./mp3/fernan.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-	if (budy.startsWith(`Paraguayo`)) {
-        const none = fs.readFileSync('./mp3/gaspi11.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-	if (budy.startsWith(`Venezolano`)) {
-        const none = fs.readFileSync('./mp3/gaspi10.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-	if (budy.startsWith(`Gaspi corte`)) {
-        const none = fs.readFileSync('./mp3/gaspi12.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-	if (budy.startsWith(`Gaspi buenos dias`)) {
-        const none = fs.readFileSync('./mp3/gaspi13.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-	if (budy.startsWith(`Enano`)) {
-        const none = fs.readFileSync('./mp3/gaspi14.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-	if (budy.startsWith(`Buenas noches`)) {
-        const none = fs.readFileSync('./mp3/gaspi15.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-        if (budy.startsWith(`Peruano`)) {
-        const none = fs.readFileSync('./mp3/gaspi16.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-	if (budy.startsWith(`Alto temazo`)) {
-        const none = fs.readFileSync('./mp3/sombare14.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-	if (budy.startsWith(`GOOOOD`)) {
-        const none = fs.readFileSync('./mp3/sombare13.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-	if (budy.startsWith(`Ya me voy a dormir`)) {
-        const none = fs.readFileSync('./mp3/sombare12.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-        if (budy.startsWith(`Calefon`)) {
-        const none = fs.readFileSync('./mp3/sombare11.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-	if (budy.startsWith(`Bot de mierda`)) {
-        const none = fs.readFileSync('./mp3/sombare10.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-	if (budy.startsWith(`Apurate bot`)) {
-        const none = fs.readFileSync('./mp3/sombare9.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-	if (budy.startsWith(`Un chino`)) {
-        const none = fs.readFileSync('./mp3/sombare7.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }				
-        if (budy.startsWith(`No funciona`)) {
-        const none = fs.readFileSync('./mp3/sombare8.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-	if (budy.startsWith(`Boliviano`)) {
-        const none = fs.readFileSync('./mp3/gaspi3.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-	if (budy.startsWith(`Corte`)) {
-        const none = fs.readFileSync('./mp3/gaspi2.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-	if (budy.startsWith(`Gaspi me saludas`)) {
-        const none = fs.readFileSync('./mp3/gaspi4.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-	if (budy.startsWith(`Gaspi y las minitas`)) {
-        const none = fs.readFileSync('./mp3/gaspi6.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-	if (budy.startsWith(`Gaspi todo bien`)) {
-        const none = fs.readFileSync('./mp3/gaspi7.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-	if (budy.startsWith(`Me quiero suicidar`)) {
-        const none = fs.readFileSync('./mp3/gaspi81.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-	if (budy.startsWith(`Gaspi ya no aguanto`)) {
-        const none = fs.readFileSync('./mp3/gaspi9.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-	if (budy.startsWith(`Contate algo bot`)) {
-        const none = fs.readFileSync('./mp3/gaspi5.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-               if (budy.startsWith(`Sexo`)) { 
-        const none = fs.readFileSync('./mp3/sexo.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-	if (budy.startsWith(`Pongan cuties`)) { 
-        const none = fs.readFileSync('./mp3/neymar1.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-                 if (budy.startsWith(`Momento epico`)) {
-        const none = fs.readFileSync('./mp3/sombare1.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-		if (budy.startsWith(`El bot del orto no funciona`)) {
-        const none = fs.readFileSync('./mp3/sombare2.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-		if (budy.startsWith(`Epicardo`)) {
-        const none = fs.readFileSync('./mp3/sombare3.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-		if (budy.startsWith(`Insta de la minita`)) {
-        const none = fs.readFileSync('./mp3/sombare4.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-                 if (budy.startsWith(`Una mierda de bot`)) {
-        const none = fs.readFileSync('./mp3/sombare5.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
-		 if (budy.startsWith(`Ultimo momento`)) {
-        const none = fs.readFileSync('./mp3/sombare6.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+					
+					
+		
+		if (budy.includes(`9`)) {
+                  reply(`*CUENTAS BANCARIAS*
+numero de cuentas de la empresa *JL SEGURIDAD* BBVA CONTINENTAL, INTERBANK,SCOTIABANK..
+https://ibb.co/GsLs3Zj
+		  `)
                   }			
-		if (budy.startsWith(`Nefasto`)) {
-        const none = fs.readFileSync('./mp3/gaspi1.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }
+					
 	if (isGroup && isSimi && budy != undefined) {
 						console.log(budy)
 						muehe = await simih(budy)
