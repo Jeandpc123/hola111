@@ -262,16 +262,6 @@ async function starts() {
 			}
            
 			
-			
-//FIN DE LINKS DE WHATSAPP	
-			
-			
-//ANTILINKS FACEBOOK GRUPOS PERFILES PUBLICACIONES
-
-
-//FIN DE ANTI LINKS 
-		
-
 
 			switch(command) {
 
