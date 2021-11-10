@@ -1707,7 +1707,7 @@ break
                   reply(`Buenos Dias trolos de mierda`)
                   }
 
-		if (budy.includes(`Bot gay`)) {
+		if (budy.includes(``)) {
                   reply(`Miren a este boludito`)
                   }
 
