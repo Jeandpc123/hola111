@@ -369,39 +369,6 @@ async function starts() {
 				(id == null || id == undefined || id == false) ? client.sendMessage(from, teks.trim(), extendedText, {contextInfo: {"mentionedJid": memberr}}) : client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": memberr}})
 			}
            
-//LINKS DE WHATSAPP	
-
-if (budy.includes("https://wa.me/")){
-		if (!isGroup) return
-		if (!isAntiWa) return
-                if (isGroupAdmins) return reply('Eres un administrador del grupo, así que no te prohibiré el uso de enlaces :)')
-		client.updatePresence(from, Presence.composing)
-		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`*LINK DE WHATSAPP DETECTADO 📢* ${sender.split("@")[0]} Usted sera eliminado de este grupo`)
-		setTimeout( () => {
-			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
-		}, 0)
-		setTimeout( () => {
-			client.updatePresence(from, Presence.composing)
-			reply("Adios mi loco")
-		}, 0)
-	}
-			
-	if (budy.includes("wa.me")){
-		if (!isGroup) return
-		if (!isAntiWa) return
-                if (isGroupAdmins) return reply('Eres un administrador del grupo, así que no te prohibiré el uso de enlaces :)')
-		client.updatePresence(from, Presence.composing)
-		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`*LINK DE WHATSAPP DETECTADO 📢* ${sender.split("@")[0]} Usted sera eliminado de este grupo`)
-		setTimeout( () => {
-			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
-		}, 0)
-		setTimeout( () => {
-			client.updatePresence(from, Presence.composing)
-			reply("Adios mi loco")
-		}, 0)
-	}
 			
 			
 //FIN DE LINKS DE WHATSAPP	
