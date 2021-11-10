@@ -67,9 +67,9 @@ const {
 	pack
 } = settingan
 
-/******INICIO DE******/
+/******INICIO DE ENTRADA******/
 
-/******ARCHIVOS******/
+/******ARCHIVOS ANTILINK******/
 
 const antilink = JSON.parse(fs.readFileSync('./src/antilink.json'))
 const antiface = JSON.parse(fs.readFileSync('./src/antiface.json'))
@@ -79,7 +79,7 @@ const antikwai = JSON.parse(fs.readFileSync('./src/antikwai.json'))
 const antiwa = JSON.parse(fs.readFileSync('./src/antiwa.json'))
 const antidiscord = JSON.parse(fs.readFileSync('./src/antidiscord.json'))
 
-/******FIN DE ARCHIVOS******/
+/******FIN DE ARCHIVOS ANTILINK******/
 	
 function addMetadata(packname, author) {	
 	if (!packname) packname = 'RonaldoBot'; if (!author) author = 'RonaldoBot';	
@@ -206,7 +206,7 @@ async function starts() {
 				success: '✔️ Listo ✔️',
                                
 				error: {
-					stick: '[❎] Falló, se produjo un error al momento de leer el QR
+					stick: '[❎] Falló, se produjo un error al momento de leer el QR',
 					},
 				only: {
 					
