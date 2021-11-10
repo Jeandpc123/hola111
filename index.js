@@ -45,22 +45,7 @@ const _leveling = JSON.parse(fs.readFileSync('./database/json/leveling.json'))
 const _level = JSON.parse(fs.readFileSync('./database/json/level.json'))
 /******FIN DE ENTRADA JSON******/
 
-/******INICIO DE LA ENTRADA DEL MENÚ******/
-const { help } = require('./src/help')
-const { logomaker } = require('./database/menu/logomaker')
-const { toinmenu } = require('./src/toinmenu')
-const { menuadmin } = require('./src/menuadmin')
-const { nsfwmenu } = require('./src/nsfwmenu')
-const { desmenu } = require('./src/desmenu')
-const { version } = require('./src/version')
-const { juegos } = require('./src/juegos')
-const { shantera } = require('./src/shantera')
-const { antimenu } = require('./src/antimenu')
-const { welmenu } = require('./src/welmenu')
-const { banmenu } = require('./src/banmenu')
-const { otak } = require('./src/otak')
-const { levelmenu } = require('./src/levelmenu')
-/******FIN DE ENTRADA DEL MENÚ******/
+
 
 /******CARGA DE ENTRADA VCARD******/
 const vcard = 'BEGIN:VCARD\n' // Tarjeta de contacto
@@ -289,7 +274,6 @@ async function starts() {
 			const isCmd = body.startsWith(prefix)
 
 			mess = {
-				wait: 'Calmao pa estoy procesando😎\n\n❗Por favor no hacer spam👏❗\n\n_*by shanduy*_',
 				success: '✔️ Listo ✔️',
                                
 				error: {
